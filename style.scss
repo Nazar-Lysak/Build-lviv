@@ -10,6 +10,7 @@ $background-second: #e5e5e5;
 html {
     scroll-behavior: smooth;
     margin: 0px 0 40px;
+    overflow-x: hidden;
 }
 
 body {
@@ -551,6 +552,39 @@ textarea:focus {
                             display: flex;
                             flex-direction: row;
                             background-color: $background-first;
+
+                            .carousel_review {
+                                .dots-carousel {
+
+                                    .carousel-row__dot {
+                                        
+                                        cursor: pointer;
+                                        display: inline-block;
+                                        height: 6px;
+                                        width: 6px;
+                                        background-color: $background-second;
+                                        border-radius: 50%;
+                                        margin: 0 12px;
+                                        transition: .3s ease;
+                                        
+                                        &:hover {
+                                            background-color: $text-color;
+                                        }
+                    
+                                        
+                                        .actives {
+                                            height: 8px;
+                                            width: 8px;
+                                            background-color: $second-color;
+                                        }
+                                    }
+
+                                }
+
+                                // .carousel_review-btn {
+
+                                // }
+                            }
                         }
 
                         img {
@@ -590,64 +624,99 @@ textarea:focus {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    
 
     .reviews-container__review {
-        height: 470px;
-        width: 470px;
-        text-align: center;
-        padding: 100px 75px;
+        height: 100%;
+        width: 60%;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(8px);
+        user-select: none;
 
         .reviews-container__quotes {
             background-image: url(../../img/ticks.png);
             background-position: right;
             background-repeat: no-repeat;
+            h3 {
+                margin: 70px 0 8px;
+            }
+            h3,
+            h2,
+            h5,
+            p {
+                text-align: center;
+            }
+
+            p {
+                text-align: justify;
+            }
+
+            .reviews-container__carousel {
+
+                .reviews-container__carousel-text {
+                    width: 100%;
+                    max-width: 400px;
+                    height: 290px;
+                    padding: 0 10px;
+                    display: none;
+                }
+
+                .is-active {
+                    display: block;
+                }
+            }
 
             .carousel_review {
                 display: flex;
-                flex-direction: row;
                 justify-content: center;
+                
 
-                .carousel__carousel-arrows {
-                    .btn {
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        color: $first-color;
-                        font-family: sans-serif;
-                        font-size: 35px;
-                        font-weight: 500;
-                        cursor: pointer;
-                        margin: 0 15px;
+                .prev,
+                .next {
+                    width: auto;
+                    margin: 0 15px;
+                    color: $first-color;
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-weight: bold;
+                    transition: 0.3s ease;
+                    
 
-                        &:hover {
-                            color: $background-first;
-                        }
+                    &:hover {
+                        color: $second-color;
                     }
+
                 }
 
-                .carousel__point {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    position: relative;
-                    bottom: 1px;
+                .next {
+                right: 130px;
+                }
 
+                .dots-carousel {
 
-                    .point {
-                        border-radius: 50%;
-                        display: flex;
+                    .dot {
                         cursor: pointer;
-                        padding: 1px;
-                        height: 3px;
-                        width: 3px;
+                        display: inline-block;
+                        height: 6px;
+                        width: 6px;
+                        background-color: $text-color;
+                        border-radius: 50%;
                         margin: 0 12px;
-                        background-color: $background-second;
-                    }
+                        transition: .3s ease;
+                        
+                        &:hover {
+                            background-color: $second-color;
+                        }
 
-                    .active {
-                        background-color: $background-first;
+                    }
+                    .is-active {
+                        height: 8px;
+                        width: 8px;
+                        background-color: $second-color;
                     }
                 }
             }
@@ -863,10 +932,6 @@ textarea:focus {
                 .line1 {
                     top: 14px;
                 }
-
-                // .line2  {
-                  
-                // }
 
                 .line3 {
                     bottom: 14px;
@@ -1284,7 +1349,6 @@ textarea:focus {
             }
         }
 
-
         @media screen and (max-width: 479px) {
 
             h1 {
@@ -1343,7 +1407,7 @@ textarea:focus {
                 align-items: center;
 
                 .reviews-container__review {
-                    height: 380px;
+                    height: max-content;
                     width: 470px;
                     text-align: center;
                     padding: 30px 25px;
@@ -1368,7 +1432,6 @@ textarea:focus {
                 }
             }
             @media screen and (max-width: 360px) {
-                
 
                 .header-container {
                     .navigation-bar {

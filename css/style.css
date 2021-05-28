@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   margin: 0px 0 40px;
+  overflow-x: hidden;
 }
 
 body {
@@ -676,6 +677,28 @@ textarea:focus {
   background-color: #ffb800;
 }
 
+.project-container .project-container__content .project-container__corousel-container .carousel .single-goods-left .goods-img-max .carousel-row .carousel_review .dots-carousel .carousel-row__dot {
+  cursor: pointer;
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  background-color: #e5e5e5;
+  border-radius: 50%;
+  margin: 0 12px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.project-container .project-container__content .project-container__corousel-container .carousel .single-goods-left .goods-img-max .carousel-row .carousel_review .dots-carousel .carousel-row__dot:hover {
+  background-color: #7c7c7c;
+}
+
+.project-container .project-container__content .project-container__corousel-container .carousel .single-goods-left .goods-img-max .carousel-row .carousel_review .dots-carousel .carousel-row__dot .actives {
+  height: 8px;
+  width: 8px;
+  background-color: #ff9900;
+}
+
 .project-container .project-container__content .project-container__corousel-container .carousel .single-goods-left .goods-img-max img {
   width: 100%;
   background-position: center;
@@ -711,13 +734,26 @@ textarea:focus {
 }
 
 .reviews-container .reviews-container__review {
-  height: 470px;
-  width: 470px;
-  text-align: center;
-  padding: 100px 75px;
+  height: 100%;
+  width: 60%;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .reviews-container .reviews-container__review .reviews-container__quotes {
@@ -726,72 +762,83 @@ textarea:focus {
   background-repeat: no-repeat;
 }
 
+.reviews-container .reviews-container__review .reviews-container__quotes h3 {
+  margin: 70px 0 8px;
+}
+
+.reviews-container .reviews-container__review .reviews-container__quotes h3,
+.reviews-container .reviews-container__review .reviews-container__quotes h2,
+.reviews-container .reviews-container__review .reviews-container__quotes h5,
+.reviews-container .reviews-container__review .reviews-container__quotes p {
+  text-align: center;
+}
+
+.reviews-container .reviews-container__review .reviews-container__quotes p {
+  text-align: justify;
+}
+
+.reviews-container .reviews-container__review .reviews-container__quotes .reviews-container__carousel .reviews-container__carousel-text {
+  width: 100%;
+  max-width: 400px;
+  height: 290px;
+  padding: 0 10px;
+  display: none;
+}
+
+.reviews-container .reviews-container__review .reviews-container__quotes .reviews-container__carousel .is-active {
+  display: block;
+}
+
 .reviews-container .reviews-container__review .reviews-container__quotes .carousel_review {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.reviews-container .reviews-container__review .reviews-container__quotes .carousel_review .carousel__carousel-arrows .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #fff;
-  font-family: sans-serif;
-  font-size: 35px;
-  font-weight: 500;
-  cursor: pointer;
+.reviews-container .reviews-container__review .reviews-container__quotes .carousel_review .prev,
+.reviews-container .reviews-container__review .reviews-container__quotes .carousel_review .next {
+  width: auto;
   margin: 0 15px;
-}
-
-.reviews-container .reviews-container__review .reviews-container__quotes .carousel_review .carousel__carousel-arrows .btn:hover {
-  color: #ffb800;
-}
-
-.reviews-container .reviews-container__review .reviews-container__quotes .carousel_review .carousel__point {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  bottom: 1px;
-}
-
-.reviews-container .reviews-container__review .reviews-container__quotes .carousel_review .carousel__point .point {
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  color: #fff;
   cursor: pointer;
-  padding: 1px;
-  height: 3px;
-  width: 3px;
-  margin: 0 12px;
-  background-color: #e5e5e5;
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
-.reviews-container .reviews-container__review .reviews-container__quotes .carousel_review .carousel__point .active {
-  background-color: #ffb800;
+.reviews-container .reviews-container__review .reviews-container__quotes .carousel_review .prev:hover,
+.reviews-container .reviews-container__review .reviews-container__quotes .carousel_review .next:hover {
+  color: #ff9900;
+}
+
+.reviews-container .reviews-container__review .reviews-container__quotes .carousel_review .next {
+  right: 130px;
+}
+
+.reviews-container .reviews-container__review .reviews-container__quotes .carousel_review .dots-carousel .dot {
+  cursor: pointer;
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  background-color: #7c7c7c;
+  border-radius: 50%;
+  margin: 0 12px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.reviews-container .reviews-container__review .reviews-container__quotes .carousel_review .dots-carousel .dot:hover {
+  background-color: #ff9900;
+}
+
+.reviews-container .reviews-container__review .reviews-container__quotes .carousel_review .dots-carousel .is-active {
+  height: 8px;
+  width: 8px;
+  background-color: #ff9900;
 }
 
 .reviews-container h2 {
@@ -1474,7 +1521,9 @@ textarea:focus {
             align-items: center;
   }
   .reviews-container .reviews-container__review {
-    height: 380px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
     width: 470px;
     text-align: center;
     padding: 30px 25px;

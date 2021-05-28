@@ -8,7 +8,7 @@ burgerMenu.addEventListener('click', function () {
     })
 });
 
-// -------------------------------------------------
+// ------------------------------------------------
 
 
 document.body.onclick = function (event) {
