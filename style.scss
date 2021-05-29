@@ -487,6 +487,7 @@ textarea:focus {
             .carousel {
                 display: flex;
                 justify-content: center;
+                user-select: none;
 
                 .single-goods-left {
                     display: flex;
@@ -494,36 +495,21 @@ textarea:focus {
                     width: max-content;
 
 
-                    .carousel__point {
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        justify-content: center;
-                        padding: 0px;
-                        width: 60%;
-
-                        .point {
-                            display: flex;
-                            cursor: pointer;
-                            padding: 1px;
-                            height: 2px;
-                            width: 2px;
-                            margin: 5px;
-                            border-radius: 50%;
-                            background-color: $background-second;
-                        }
-
-                        .active {
-                            width: 2px;
-                            height: 2px;
-                            border-radius: 50%;
-                            background-color: $first-color;
-                        }
-                    }
+                  
 
                     .goods-img-max {
                         height: 360px;
                         width: 350px;
+
+                        .goods-img__wrapper {
+                            .goods-img__item {
+                                display: none;
+                            }
+
+                            .actives {
+                                display: block;
+                            }
+                        }
 
                         .carousel-row {
                             height: 72px;
@@ -549,40 +535,43 @@ textarea:focus {
                                         height: 6px;
                                         width: 6px;
                                         background-color: $background-second;
+                                        opacity: .5;
                                         border-radius: 50%;
                                         margin: 0 12px;
                                         transition: .3s ease;
                                         
                                         &:hover {
-                                            background-color: $text-color;
-                                        }
-                    
-                                        
-                                        .actives {
-                                            height: 8px;
-                                            width: 8px;
-                                            background-color: $second-color;
+                                            opacity: 1;
                                         }
                                     }
 
-                                    .carousel_review-btn {
+                                    .actives {
+                                        height: 8px;
+                                        width: 8px;
+                                        opacity: 1;
+                                    }
+                                }
+
+                                .carousel_review-btn {
+
+                                    display: flex;
                                         
-                                        .carousel_review__prev,
-                                        .carousel_review__next {
-                                            width: auto;
-                                            margin: 0 115px;
-                                            cursor: pointer;
-                                            font-size: 18px;
-                                            font-weight: bold;
-                                            transition: 0.3s ease; 
-                                            color: green;
-                                            
+                                    .carousel_review__prev,
+                                    .carousel_review__next {
+                                        width: auto;
+                                        margin: 0 25px;
+                                        cursor: pointer;
+                                        font-size: 28px;
+                                        font-weight: 100;
+                                        transition: 0.3s ease; 
+                                        color: $background-second;
+                                        
+                                        
+                                        
 
-                                            &:hover {
-                                                color: $second-color;
-                                            }
+                                        &:hover {
+                                            color: rgb(231, 210, 170);
                                         }
-
                                     }
 
                                 }
@@ -683,8 +672,8 @@ textarea:focus {
                     margin: 0 15px;
                     color: $first-color;
                     cursor: pointer;
-                    font-size: 18px;
-                    font-weight: bold;
+                    font-size: 28px;
+                    font-weight: 100;
                     transition: 0.3s ease;
                     
 
@@ -698,7 +687,8 @@ textarea:focus {
                 }
 
                 .dots-carousel {
-
+                    position: relative;
+                    top: 9px;
                     .dot {
                         cursor: pointer;
                         display: inline-block;
@@ -919,6 +909,7 @@ textarea:focus {
                 display: block;
                 margin: 0 20px;
                 z-index: 9999999;
+                
 
                 .line {
                     position: relative;
@@ -948,6 +939,7 @@ textarea:focus {
                 display: flex;
                 flex-direction: column;
                 z-index: 999;
+                
 
 
                 .navigation-bar__menu {
