@@ -73,7 +73,7 @@ textarea:focus {
 }
 
 .header-container {
-  background-image: url(../img/mask-group.png);
+  background-image: url(img/mask-group.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -329,7 +329,7 @@ textarea:focus {
 }
 
 .header-container .main-info .calc {
-  background-image: url(../img/calc.png);
+  background-image: url(img/calc.png);
   background-position: right;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -344,7 +344,7 @@ textarea:focus {
 }
 
 .header-container .main-info .money {
-  background-image: url(../img/money.png);
+  background-image: url(img/money.png);
   background-position: right;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -359,7 +359,7 @@ textarea:focus {
 }
 
 .header-container .main-info .note {
-  background-image: url(../img/note.png);
+  background-image: url(img/note.png);
   background-position: right;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -374,7 +374,7 @@ textarea:focus {
 }
 
 .header-container .main-info .time {
-  background-image: url(../img/time.png);
+  background-image: url(img/time.png);
   background-position: right;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -389,7 +389,7 @@ textarea:focus {
 }
 
 .header-container .main-info .check {
-  background-image: url(../img/check.png);
+  background-image: url(img/check.png);
   background-position: right;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -414,7 +414,7 @@ textarea:focus {
 .about-container .about-container__experience {
   height: 766px;
   width: 45%;
-  background-image: url(../img/experience.png);
+  background-image: url(img/experience.png);
   position: relative;
   background-position: right;
   background-size: cover;
@@ -444,7 +444,7 @@ textarea:focus {
 }
 
 .about-container .about-container__text-container {
-  background-image: url(../img/bedroom-plan.png);
+  background-image: url(img/bedroom-plan.png);
   padding: 148px 128px 0 98px;
   background-position: center;
   background-position-y: 380px;
@@ -478,7 +478,7 @@ textarea:focus {
 .how-we-work .how-we-work__icon {
   height: 20%;
   margin: 0 25px;
-  background-image: url(../img/group.png);
+  background-image: url(img/group.png);
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
@@ -527,7 +527,7 @@ textarea:focus {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-image: url(../img/bedroom-plan-two.png);
+  background-image: url(img/bedroom-plan-two.png);
   background-position: center;
   background-repeat: no-repeat;
   background-position-y: 180px;
@@ -715,7 +715,7 @@ textarea:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../img/reviews.png);
+  background-image: url(img/reviews.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -745,7 +745,7 @@ textarea:focus {
 }
 
 .reviews-container .reviews-container__review .reviews-container__quotes {
-  background-image: url(../img/ticks.png);
+  background-image: url(img/ticks.png);
   background-position: right;
   background-repeat: no-repeat;
 }
@@ -1309,7 +1309,7 @@ textarea:focus {
   .about-container .about-container__experience {
     height: 366px;
     width: 100%;
-    background-image: url(../img/experience.png);
+    background-image: url(img/experience.png);
     position: relative;
     background-position: center;
     background-size: cover;
@@ -1341,7 +1341,7 @@ textarea:focus {
     letter-spacing: 0.2px;
   }
   .about-container .about-container__text-container {
-    background-image: url(../img/bedroom-plan.png);
+    background-image: url(img/bedroom-plan.png);
     background-position: center;
     background-position-y: 120px;
     background-repeat: no-repeat;
@@ -1425,7 +1425,7 @@ textarea:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-image: url(../img/bedroom-plan-two.png);
+    background-image: url(img/bedroom-plan-two.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position-y: 180px;
@@ -1525,7 +1525,7 @@ textarea:focus {
             backdrop-filter: blur(8px);
   }
   .reviews-container .reviews-container__review .reviews-container__quotes {
-    background-image: url(../img/ticks.png);
+    background-image: url(img/ticks.png);
     background-position: right;
     background-repeat: no-repeat;
   }
