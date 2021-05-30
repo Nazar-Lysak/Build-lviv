@@ -4,6 +4,10 @@ html {
   overflow-x: hidden;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -763,13 +767,13 @@ textarea:focus {
 
 .reviews-container .reviews-container__review .reviews-container__quotes p {
   text-align: justify;
+  height: 205px;
 }
 
 .reviews-container .reviews-container__review .reviews-container__quotes .reviews-container__carousel .reviews-container__carousel-text {
   width: 100%;
   max-width: 400px;
   height: 290px;
-  padding: 0 10px;
   display: none;
 }
 
@@ -1065,6 +1069,8 @@ textarea:focus {
   }
   .header-container .navigation-bar .menu__icon .line {
     position: relative;
+    -webkit-transition: .3s;
+    transition: .3s;
     display: block;
     width: 25px;
     height: 3px;
@@ -1072,11 +1078,20 @@ textarea:focus {
     background-color: #ffb800;
     content: "";
   }
-  .header-container .navigation-bar .menu__icon .line1 {
-    top: 14px;
+  .header-container .navigation-bar .active .line1 {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 6px;
   }
-  .header-container .navigation-bar .menu__icon .line3 {
-    bottom: 14px;
+  .header-container .navigation-bar .active .line2 {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    opacity: 0;
+  }
+  .header-container .navigation-bar .active .line3 {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: 6px;
   }
   .header-container .navigation-bar .navigation-bar__burger-content {
     position: fixed;
@@ -1091,6 +1106,7 @@ textarea:focus {
         -ms-flex-direction: column;
             flex-direction: column;
     z-index: 999;
+    overflow: hidden;
   }
   .header-container .navigation-bar .navigation-bar__burger-content .navigation-bar__menu {
     margin: 10px 0 0 10px;
@@ -1099,7 +1115,7 @@ textarea:focus {
     right: 0px;
     cursor: pointer;
     position: fixed;
-    height: 60vh;
+    height: 95vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1107,7 +1123,7 @@ textarea:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.85);
     -webkit-transition: .5s ease 0s;
     transition: .5s ease 0s;
   }

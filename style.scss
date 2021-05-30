@@ -13,6 +13,10 @@ html {
     overflow-x: hidden;
 }
 
+.overflow {
+    overflow: hidden;
+} 
+
 body {
     max-width: 1440px;
     margin: 0 auto;
@@ -644,6 +648,7 @@ textarea:focus {
 
             p {
                 text-align: justify;
+                height: 205px;
             }
 
             .reviews-container__carousel {
@@ -652,7 +657,6 @@ textarea:focus {
                     width: 100%;
                     max-width: 400px;
                     height: 290px;
-                    padding: 0 10px;
                     display: none;
                 }
 
@@ -903,7 +907,6 @@ textarea:focus {
 
     .header-container {
         .navigation-bar {
-            
             .menu__icon {
                 cursor: pointer;
                 display: block;
@@ -913,20 +916,31 @@ textarea:focus {
 
                 .line {
                     position: relative;
+                    transition: .3s;
                     display: block;
                     width: 25px;
                     height: 3px;
                     margin: 3px;
                     background-color: $background-first;
                     content: "";
+                }           
+            }
+
+            .active {
+                
+                .line1 {
+                    transform: rotate(45deg);
+                    top: 6px;
                 }
 
-                .line1 {
-                    top: 14px;
+                .line2 {
+                    transform: rotate(90deg);
+                    opacity: 0;
                 }
 
                 .line3 {
-                    bottom: 14px;
+                    transform: rotate(-45deg);
+                    bottom: 6px;
                 }
             }
 
@@ -939,7 +953,7 @@ textarea:focus {
                 display: flex;
                 flex-direction: column;
                 z-index: 999;
-                
+                overflow: hidden;
 
 
                 .navigation-bar__menu {
@@ -949,10 +963,10 @@ textarea:focus {
                     right: 0px;
                     cursor: pointer;
                     position: fixed;
-                    height: 60vh;
+                    height: 95vh;
                     display: flex;
                     flex-direction: column;
-                    background: rgba(0, 0, 0, 0.8);
+                    background: rgba(0, 0, 0, 0.85);
                     transition: .5s ease 0s;
                     
 
@@ -965,9 +979,10 @@ textarea:focus {
 
                 .navigation-bar__menu.active{
                     top: 40px;
-                    
+              
                 }
 
+                
                 .navigation-bar__btn {
                     display: none;
                 }
@@ -1177,6 +1192,7 @@ textarea:focus {
         }
 
         .header-container {
+            
             .header-container__contacts-bar {
                 .tel {
                     max-width: 170px;
