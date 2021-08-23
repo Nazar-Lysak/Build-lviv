@@ -15,7 +15,7 @@ html {
 
 .overflow {
     overflow: hidden;
-} 
+}
 
 body {
     max-width: 1440px;
@@ -25,7 +25,7 @@ body {
 }
 
 h1 {
-    
+
     font-weight: 400;
     font-size: 40px;
     line-height: 55px;
@@ -38,7 +38,7 @@ h2 {
     line-height: 55px;
     letter-spacing: 0.2px;
     color: $third-color;
-    
+
     margin: 0;
 }
 
@@ -68,7 +68,7 @@ h5 {
 
 h6 {
     font-weight: 700;
-    
+
     font-size: 30px;
     margin: 0;
     padding: 0;
@@ -288,8 +288,6 @@ textarea:focus {
             margin: 1px;
 
             p {
-
-                
                 font-weight: 500;
             }
         }
@@ -370,7 +368,7 @@ textarea:focus {
                 letter-spacing: 0.2px;
 
                 span {
-                    
+
                     font-size: 70px;
                     line-height: 97px;
                     letter-spacing: 0.2px;
@@ -391,7 +389,7 @@ textarea:focus {
 
         p {
             color: $text-color;
-            
+
             font-weight: 500;
             text-align: justify;
             font-size: 18px;
@@ -473,11 +471,11 @@ textarea:focus {
 
             p {
                 color: $text-color;
-                
+
             }
 
             span {
-                
+
                 color: $third-color;
                 font-weight: 700;
                 font-size: 18px;
@@ -499,7 +497,7 @@ textarea:focus {
                     width: max-content;
 
 
-                  
+
 
                     .goods-img-max {
                         height: 360px;
@@ -531,7 +529,7 @@ textarea:focus {
                                 .dots-carousel {
 
                                     .carousel-row__dot {
-                                        
+
                                         cursor: pointer;
                                         display: inline-block;
                                         position: relative;
@@ -543,7 +541,7 @@ textarea:focus {
                                         border-radius: 50%;
                                         margin: 0 12px;
                                         transition: .3s ease;
-                                        
+
                                         &:hover {
                                             opacity: 1;
                                         }
@@ -559,7 +557,7 @@ textarea:focus {
                                 .carousel_review-btn {
 
                                     display: flex;
-                                        
+
                                     .carousel_review__prev,
                                     .carousel_review__next {
                                         width: auto;
@@ -567,11 +565,11 @@ textarea:focus {
                                         cursor: pointer;
                                         font-size: 28px;
                                         font-weight: 100;
-                                        transition: 0.3s ease; 
+                                        transition: 0.3s ease;
                                         color: $background-second;
-                                        
-                                        
-                                        
+
+
+
 
                                         &:hover {
                                             color: rgb(231, 210, 170);
@@ -619,7 +617,7 @@ textarea:focus {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    
+
 
     .reviews-container__review {
         height: 100%;
@@ -668,7 +666,7 @@ textarea:focus {
             .carousel_review {
                 display: flex;
                 justify-content: center;
-                
+
 
                 .prev,
                 .next {
@@ -679,7 +677,7 @@ textarea:focus {
                     font-size: 28px;
                     font-weight: 100;
                     transition: 0.3s ease;
-                    
+
 
                     &:hover {
                         color: $second-color;
@@ -702,7 +700,7 @@ textarea:focus {
                         border-radius: 50%;
                         margin: 0 12px;
                         transition: .3s ease;
-                        
+
                         &:hover {
                             background-color: $second-color;
                         }
@@ -912,7 +910,7 @@ textarea:focus {
                 display: block;
                 margin: 0 20px;
                 z-index: 9999999;
-                
+
 
                 .line {
                     position: relative;
@@ -923,11 +921,11 @@ textarea:focus {
                     margin: 3px;
                     background-color: $background-first;
                     content: "";
-                }           
+                }
             }
 
             .active {
-                
+
                 .line1 {
                     transform: rotate(45deg);
                     top: 6px;
@@ -968,7 +966,7 @@ textarea:focus {
                     flex-direction: column;
                     background: rgba(0, 0, 0, 0.85);
                     transition: .5s ease 0s;
-                    
+
 
                     a {
                         text-align: center;
@@ -979,10 +977,10 @@ textarea:focus {
 
                 .navigation-bar__menu.active{
                     top: 40px;
-              
+
                 }
 
-                
+
                 .navigation-bar__btn {
                     display: none;
                 }
@@ -992,10 +990,10 @@ textarea:focus {
         .main-info {
             height: 100px;
 
-            .one, 
-            .calc, 
-            .money, 
-            .note, 
+            .one,
+            .calc,
+            .money,
+            .note,
             .time,
             .check {
                 background-size: 35%;
@@ -1192,7 +1190,7 @@ textarea:focus {
         }
 
         .header-container {
-            
+
             .header-container__contacts-bar {
                 .tel {
                     max-width: 170px;
@@ -1241,7 +1239,7 @@ textarea:focus {
                         letter-spacing: 0.2px;
 
                         span {
-                            
+
                             font-size: 25px;
                             line-height: 25px;
                             letter-spacing: 0.2px;
@@ -1263,7 +1261,7 @@ textarea:focus {
 
                 p {
                     color: $text-color;
-                    
+
                     font-weight: 500;
                     text-align: justify;
                     font-size: 18px;
@@ -1458,7 +1456,7 @@ textarea:focus {
                                 font-size: 22px;
                                 line-height: 22px;
                             }
-                    
+
                             p {
                                 font-size: 14px;
                                 line-height: 14px;
@@ -1484,7 +1482,7 @@ textarea:focus {
                 .contact-us {
                     .contact-us__form {
                         .input {
-                            width: 250px;  
+                            width: 250px;
                         }
                     }
                 }
@@ -1494,23 +1492,23 @@ textarea:focus {
                     margin: 0;
                     padding: 80px 0;
                     height: max-content;
-            
+
                     .footer-main-container__logo {
                         width: 50%;
                     }
-            
+
                     .footer-main-container__menu {
                         width: 50%;
-            
+
                         a {
                             font-size: 12px;
                         }
                     }
-            
+
                     .footer-main-container__address {
                         width: 50%;
                     }
-            
+
                     .footer-main-container__socials {
                         width: 100px;
                     }
